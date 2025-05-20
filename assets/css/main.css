@@ -1,42 +1,43 @@
-/**
-* Template Name: Medicio
-* Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #555555; /* Color for headings, subheadings and title throughout the website */
-  --main-gold-color: #D0A368; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-  --black-color: #0a0a0a; /* Used for text and elements that require a strong contrast against lighter backgrounds */
-  --white-color: aliceblue; /* Used for text and elements that require a strong contrast against darker backgrounds */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #D0A368; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #D0A368; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #555555;
+  /* Color for headings, subheadings and title throughout the website */
+  --main-gold-color: #D0A368;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --black-color: #0a0a0a;
+  /* Used for text and elements that require a strong contrast against lighter backgrounds */
+  --white-color: aliceblue;
+  /* Used for text and elements that require a strong contrast against darker backgrounds */
+  --light-gray-color: #a9a9a9;
+  /* Used for text and elements that require a medium contrast against lighter backgrounds */
+  /* Nav-colores */
+  --nav-color: #444444;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #D0A368;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #D0A368;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -895,6 +896,7 @@ section,
   padding: 8px 32px;
   transition: 0.3s;
   margin: 10px;
+  margin-bottom: 3vh;
   border-radius: 5px;
   color: var(--contrast-color);
   background: var(--main-gold-color);
@@ -974,7 +976,7 @@ section,
   border-radius: 50px;
   opacity: 1;
   transition: 0.3s;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
 }
 
 .hero .carousel-indicators li.active {
@@ -1412,7 +1414,7 @@ section,
 
   .tabs .nav-link.active {
     color: var(--main-gold-color);
-    background: var(--main-gold-color);
+    border-right: 3px solid var(--main-gold-color)
   }
 }
 
@@ -1965,11 +1967,12 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Personalized Code
+# Last Personalized Code
 --------------------------------------------------------------*/
 .div-button-whatsapp {
   margin-top: 40px;
 }
+
 .button-whatsapp {
   background: var(--main-gold-color);
   font-size: 1.2rem;
@@ -1980,6 +1983,7 @@ section,
   border-radius: 4px;
   margin-top: 40px;
 }
+
 .button-whatsapp:hover {
   color: var(--nav-color);
 }
@@ -1990,15 +1994,20 @@ section,
 
 @keyframes zoomOutEffect {
   0% {
-    transform: scale(1.1); /* Tamanho normal */
+    transform: scale(1.1);
+    /* Tamanho normal */
     filter: blur(1px);
   }
+
   50% {
-    transform: scale(1); /* Volta ao tamanho normal */
+    transform: scale(1);
+    /* Volta ao tamanho normal */
     filter: blur(0px);
   }
+
   100% {
-    transform: scale(1.1); /* Volta ao tamanho normal */
+    transform: scale(1.1);
+    /* Volta ao tamanho normal */
     filter: blur(1px);
   }
 }
@@ -2012,15 +2021,17 @@ section,
 @media (max-width: 989px) {
   .logo-footer {
     width: 50vw;
-    margin-left:5%;
+    margin-left: 5%;
   }
 }
+
 @media (max-width: 767px) {
   .logo-footer {
     width: 90%;
-    margin-left:5%;
+    margin-left: 5%;
   }
 }
+
 @media (max-width: 575px) {
   .logo-footer {
     width: 80%;
@@ -2044,13 +2055,34 @@ section,
   width: 16rem;
   border-radius: 3%;
 }
+
 @media (max-width: 999px) {
   .font-size-small-phone {
     font-size: 0.9rem;
   }
+
   .font-size-smallest-phone {
     font-size: 0.8rem !important;
   }
+
+  .fotos-estetica {
+    margin-bottom: 1.5rem;
+  }
+
+  .row {
+    text-align: justify;
+  }
+}
+
+.row-missao,
+.row-features,
+.row-estetica {
+  text-align: justify;
+}
+
+.img-sobre {
+  object-fit: cover;
+
 }
 
 /* Loader */
@@ -2061,30 +2093,53 @@ section,
   background-color: #060606;
 
   display: flex;
-  flex-direction: column; /* Alinha os itens em colunas (um sob o outro) */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  position: fixed; /* Garante que o loader fique fixo na tela */
+  flex-direction: column;
+  /* Alinha os itens em colunas (um sob o outro) */
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  position: fixed;
+  /* Garante que o loader fique fixo na tela */
 }
+
 .img-loader {
-  display: block; /* Garante que a imagem seja tratada como um bloco */
-  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block;
+  /* Garante que a imagem seja tratada como um bloco */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
   margin-top: 35vh;
-  width: clamp(20px, 50vw,400px);
-  margin-bottom: 40px; /* Espaço entre a imagem e o texto */
+  width: clamp(20px, 50vw, 400px);
+  margin-bottom: 40px;
+  /* Espaço entre a imagem e o texto */
 }
+
 .loader {
   margin-left: auto;
   margin-right: auto;
   height: 1px;
-  width: clamp(20px, 30vw,400px);
-  --c:no-repeat linear-gradient( #fff 0 0);
-  background: var(--c),var(--c),#D0A368;
+  width: clamp(20px, 30vw, 400px);
+  --c: no-repeat linear-gradient(#fff 0 0);
+  background: var(--c), var(--c), #D0A368;
   background-size: 60% 100%;
   animation: l16 3s infinite;
 }
+
 @keyframes l16 {
-  0%   {background-position:-150% 0,-150% 0}
-  66%  {background-position: 250% 0,-150% 0}
-  100% {background-position: 250% 0, 250% 0}
+  0% {
+    background-position: -150% 0, -150% 0
+  }
+
+  66% {
+    background-position: 250% 0, -150% 0
+  }
+
+  100% {
+    background-position: 250% 0, 250% 0
+  }
 }
+
+  /* Scroll */
+  #estetica, #fotos{
+    scroll-padding: 600px;
+  }
