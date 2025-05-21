@@ -2074,6 +2074,14 @@ section,
     animation: gradient 5s ease infinite;
 }
 
+@media (max-width: 898px) {
+    #loading {
+        background: linear-gradient(-45deg, #000, #000, #a88b2a, #75682e);
+        background-size: 600% 600%;
+        animation: gradient 5s ease infinite;
+    }
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 70%;
@@ -2098,16 +2106,17 @@ section,
   /* Espaço entre a imagem e o texto */
 }
 
-.loader {
+.line-loader {
   margin-left: auto;
   margin-right: auto;
   height: 1px;
   width: clamp(20px, 30vw, 400px);
-  --c: no-repeat linear-gradient(#fff 0 0);
-  background: var(--c), var(--c), #D0A368;
+  --c: no-repeat linear-gradient(#D0A368 0 0);
+  background: var(--c), var(--c), #000;
   background-size: 60% 100%;
   animation: l16 3s infinite;
 }
+/*  */
 
 @keyframes l16 {
   0% {
