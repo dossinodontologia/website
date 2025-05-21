@@ -642,41 +642,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background-color: var(--background-color);
-  transition: all 0.6s ease-out;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid var(--main-gold-color);
-  border-top-color: color-mix(in srgb, var(--main-gold-color), transparent 90%);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
 .scroll-top {
@@ -2102,6 +2067,25 @@ section,
   position: fixed;
   /* Garante que o loader fique fixo na tela */
 }
+
+#loading {
+    background: linear-gradient(-45deg, #000, #000, #000, #a88b2a, #75682e);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 70%;
+    }
+    50% {
+        background-position: 100% 60%;
+    }
+    100% {
+        background-position: 100% 70%;
+    }
+}
+
 
 .img-loader {
   display: block;

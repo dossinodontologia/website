@@ -51,16 +51,6 @@
   });
 
   /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
-
-  /**
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
@@ -205,4 +195,4 @@ var i = setInterval(function () {
   document.getElementById("loading").style.display = "none";
   document.getElementById("content").style.display = "block";
 
-}, 1700);
+}, 2500);
