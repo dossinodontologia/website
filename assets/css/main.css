@@ -567,7 +567,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--white-color), transparent 50%);
+  /* border: 1px solid color-mix(in srgb, var(--white-color), transparent 50%); */
   font-size: 16px;
   color: color-mix(in srgb, var(--white-color), transparent 20%);
   margin-right: 10px;
@@ -577,6 +577,14 @@ h6 {
 .footer .social-links a:hover {
   color: var(--main-gold-color);
   border-color: var(--main-gold-color);
+}
+
+.footer .social-links .svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.footer .social-links .svg:active {
+  transform: scale(0.9);
 }
 
 .footer h4 {
@@ -927,21 +935,24 @@ section,
 .hero .carousel-control-prev:hover .carousel-control-prev-icon,
 .hero .carousel-control-next:hover .carousel-control-next-icon,
 .hero .carousel-control-next:hover .carousel-control-prev-icon {
-  background: var(--main-gold-color);
-  color: var(--contrast-color);
+  background: transparent;
+  color: var(--main-gold-color);
+  border-color: var(--contrast-color);
 }
 
 .hero .carousel-indicators li {
   cursor: pointer;
-  background: var(--contrast-color);
+  border-color: var(--contrast-color);
   overflow: hidden;
-  border: 0;
-  width: 12px;
-  height: 12px;
+  border: 1px solid var(--main-gold-color);
+  background-color: transparent;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50px;
   opacity: 1;
   transition: 0.3s;
   margin-bottom: 5vh;
+  margin-right: 0.5rem;
 }
 
 .hero .carousel-indicators li.active {
@@ -1459,11 +1470,12 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 1.6rem;
+  height: 1.6rem;
   background-color: var(--background-color);
   opacity: 1;
   border: 1px solid var(--main-gold-color);
+  margin-right: 0.8rem;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -1560,8 +1572,10 @@ section,
 .gallery .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--background-color);
   border: 1px solid var(--main-gold-color);
-  width: 12px;
-  height: 12px;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
   opacity: 1;
 }
 
