@@ -648,6 +648,9 @@ h6 {
   margin-top: 8px;
   font-size: 13px;
 }
+.footer .credits a {
+  font-weight: bold;
+}
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -1964,6 +1967,21 @@ section,
 }
 
 .button-whatsapp:hover {
+  color: var(--nav-color);
+}
+
+.button-whatsapp-copy {
+  background: var(--main-gold-color);
+  font-size: 1.2rem;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.button-whatsapp-copy:hover {
   color: var(--nav-color);
 }
 
