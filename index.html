@@ -22,16 +22,19 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+    <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <!-- Preload -->
+  <link rel="preload" as="image" href="assets/img/hero-carousel/mari-dente.webp">
 
 </head>
 
@@ -67,7 +70,7 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-end">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img src="assets/img/logo-and-favicon/logo-preto-1080p-sf.png" alt="">
+          <img src="assets/img/logo-and-favicon/logo-preto-1080p-sf.webp" alt="">
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -100,7 +103,7 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/mari-dente.webp" alt="" class="img-zoom-out">
+          <img src="assets/img/hero-carousel/mari-dente3.webp" alt="" class="img-zoom-out">
           <div class="container container-hero">
             <a href="#sobre-nos" class="btn-get-started">Sobre Nós</a>
           </div>
@@ -495,7 +498,7 @@
 
         <div class="row">
           <div class="col-lg-6 details order-2 order-lg-1">
-            <img src="./assets/img/doctors/mari-formal.png" alt="Foto Profissional da Doutora Mariana Ludke " style="border-radius: 3%; height: 28rem;" class="img-fluid">
+            <img src="./assets/img/doctors/mari-formal.webp" alt="Foto Profissional da Doutora Mariana Ludke " style="border-radius: 3%; height: 28rem;" class="img-fluid">
           </div>
           <div class="col-lg-5 text-center order-1 order-lg-1" style="margin-top: 10%;">
             <h2>Tratamentos Estéticos</h2>
@@ -614,7 +617,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
-          <script type="application/json" class="swiper-config">
+          <script defer type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
@@ -730,7 +733,7 @@
           <div class="col-lg-3 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/doctors/gui-2.png" class="img-fluid" alt="">
+                <img src="assets/img/doctors/gui-2.webp" class="img-fluid" alt="Foto do Dr. Guilherme Dossin" loading="lazy">
                 <div class="social">
                   <a href="https://www.instagram.com/drguilhermedossindamin/" target="_blank"><i class="bi bi-instagram"></i></a>
                   <!-- <a href="" target="_blank"><i class="bi bi-linkedin"></i></a> -->
@@ -746,7 +749,7 @@
           <div class="col-lg-3 col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div  class="member-img">
-                <img src="assets/img/doctors/mari-2.png" class="img-fluid" alt="">
+                <img src="assets/img/doctors/mari-2.webp" class="img-fluid" alt="Foto da Dra. Mariana Ludke" loading="lazy">
                 <div class="social">
                   <a href="https://www.instagram.com/mari.ludke/" target="_blankhttps://www.instagram.com/mari.ludke/"><i class="bi bi-instagram"></i></a>
                   <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
@@ -777,7 +780,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
+          <script defer type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
@@ -1035,7 +1038,7 @@
         </div>
 
         <div class="col-lg-2 col-md-6 footer-links">
-          <img src="assets/img/logo-and-favicon/logo-oficial-1080p-sf.png"  alt=""
+          <img src="assets/img/logo-and-favicon/logo-oficial-1080p-sf.webp"  alt=""
             class="logo-footer">
         </div>
 
@@ -1067,15 +1070,15 @@
   </div><!--  End of Div Content -->
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="assets/vendor/php-email-form/validate.js"></script>
+  <script defer src="assets/vendor/aos/aos.js"></script>
+  <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script defer src="assets/js/main.js"></script>
 
 </body>
 
