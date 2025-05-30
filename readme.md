@@ -4,7 +4,7 @@
 ## Dossin Odontologia
 
 <div align="center">
-   <img width="80%"src="./assets/img/readme/readme.png">
+   <img width="80%"src="./assets/video/dossin-odonto.gif">
 </div>
 
 ## Um projeto real
